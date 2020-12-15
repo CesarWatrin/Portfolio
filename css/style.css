@@ -466,14 +466,6 @@ nav {
 /* line 62, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .logo {
   width: 50px;
-  transition: 2s;
-  transform-origin: 25px 15px;
-}
-
-/* line 68, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
-.logo:hover {
-  transform: rotate(360deg);
-  opacity: 0;
 }
 
 @font-face {

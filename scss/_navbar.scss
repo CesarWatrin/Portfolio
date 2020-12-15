@@ -61,4 +61,11 @@ nav {
 
 .logo {
    width: 50px;
+   transition: 2s;
+   transform-origin: 25px 15px;
+}
+
+.logo:hover {
+   transform: rotate(360deg);
+   opacity: 0;
 }

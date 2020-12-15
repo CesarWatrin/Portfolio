@@ -38,13 +38,34 @@ body {
 
    div:nth-child(3) {
       padding: 20px;
-      filter: grayscale(100%);
-      transition-duration: 1s;
-   }
 
-   div:nth-child(3):hover {
-      filter: grayscale(0%);
-      transition-duration: 1s;
+      div {
+         filter: grayscale(100%);
+         transition-duration: 1s;
+         padding: 0;
+         overflow: hidden;
+         position: relative;
+
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+         }
+
+         img {
+            max-width: 100%;
+            transition: all 0.8s;
+         }
+
+         img:hover {
+            transform:scale(1.06);
+         }
+      }
+
+      div:hover {
+         filter: grayscale(0%);
+         transition-duration: 1s;
+      }
    }
 
    div:nth-child(4) {

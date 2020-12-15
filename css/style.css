@@ -466,6 +466,14 @@ nav {
 /* line 62, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .logo {
   width: 50px;
+  transition: 2s;
+  transform-origin: 25px 15px;
+}
+
+/* line 68, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+.logo:hover {
+  transform: rotate(360deg);
+  opacity: 0;
 }
 
 @font-face {
@@ -510,52 +518,77 @@ body {
 /* line 39, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) {
   padding: 20px;
-  filter: grayscale(100%);
-  transition-duration: 1s;
 }
 
-/* line 45, ../César/Documents/Portofolio_V2/scss/style.scss */
-.text_content div:nth-child(3):hover {
+/* line 42, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div:nth-child(3) div {
+  filter: grayscale(100%);
+  transition-duration: 1s;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 49, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div:nth-child(3) div * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 55, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div:nth-child(3) div img {
+  max-width: 100%;
+  transition: all 0.8s;
+}
+
+/* line 60, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div:nth-child(3) div img:hover {
+  transform: scale(1.06);
+}
+
+/* line 65, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div:nth-child(3) div:hover {
   filter: grayscale(0%);
   transition-duration: 1s;
 }
 
-/* line 50, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 71, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(4) {
   display: flex;
   justify-content: center;
 }
 
-/* line 56, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 77, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset {
   box-shadow: 0.2em 0.2em 0 0 var(--color), inset 0.2em 0.2em 0 0 var(--color);
 }
 
-/* line 61, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 82, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset:hover, .offset:focus {
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
 
-/* line 72, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 93, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset {
   --color: white;
   --hover: white;
 }
 
-/* line 78, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 99, ../César/Documents/Portofolio_V2/scss/style.scss */
 button {
   cursor: pointer;
   color: var(--color);
   transition: 0.5s;
 }
 
-/* line 83, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 104, ../César/Documents/Portofolio_V2/scss/style.scss */
 button:hover, button:focus {
   border-color: var(--hover);
   color: #222222;
 }
 
-/* line 90, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 111, ../César/Documents/Portofolio_V2/scss/style.scss */
 button {
   background: none;
   border: 2px solid;
@@ -565,25 +598,25 @@ button {
   padding: 1em 3em;
 }
 
-/* line 99, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 120, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation {
   background-color: white;
 }
 
-/* line 102, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 123, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation h2 {
   font-size: 30px;
   padding: 20px;
 }
 
-/* line 107, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 128, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation .mes_projets {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 114, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 135, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet {
   display: flex;
   flex-direction: row;
@@ -591,13 +624,13 @@ button {
   max-width: 500px;
 }
 
-/* line 120, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 141, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet .projet-image {
   width: 30%;
   margin: auto 0;
 }
 
-/* line 125, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 146, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet .projet-description {
   width: 80%;
   padding-left: 20px;

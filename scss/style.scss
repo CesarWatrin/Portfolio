@@ -1,0 +1,48 @@
+@import 'reset';
+@import 'navbar';
+
+$dark_color: #222222;
+
+@font-face {
+   font-family: 'Gentium-Bold';
+   src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body {
+   font-family: 'Gentium-Bold';
+}
+
+.section_header {
+   background-color: $dark_color;
+   display: flex;
+   flex-direction: column;
+   color: white;
+}
+
+.text_content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   div:nth-child(1) {
+      padding: 20px;
+      padding-top: 50px;
+      font-size: 45px;
+   }
+
+   div:nth-child(2) {
+      padding: 20px;
+   }
+
+   div:nth-child(3) {
+      padding: 10px;
+      filter: grayscale(100%);
+      transition-duration: 1s;
+   }
+
+   div:nth-child(3):hover {
+      padding: 10px;
+      filter: grayscale(0%);
+      transition-duration: 1s;
+   }
+}

@@ -713,8 +713,40 @@ button {
 }
 
 /* line 223, ../César/Documents/Portofolio_V2/scss/style.scss */
-.section_parcours p {
-  color: white;
+.section_parcours h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* line 229, ../César/Documents/Portofolio_V2/scss/style.scss */
+.ecole {
+  padding: 10px 0;
+}
+
+/* line 232, ../César/Documents/Portofolio_V2/scss/style.scss */
+.ecole div {
+  width: 260px;
+  margin: 0 auto;
+}
+
+/* line 237, ../César/Documents/Portofolio_V2/scss/style.scss */
+.ecole div:last-of-type {
+  border-left: 1px solid #222222;
+}
+
+/* line 241, ../César/Documents/Portofolio_V2/scss/style.scss */
+.ecole span {
+  font-weight: bold;
+}
+
+/* line 245, ../César/Documents/Portofolio_V2/scss/style.scss */
+.ecole span, .ecole p {
+  padding: 10px 0px 0px 10px;
+}
+
+/* line 254, ../César/Documents/Portofolio_V2/scss/style.scss */
+.etudes div:nth-child(2) div:first-of-type {
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -220,7 +220,39 @@ button {
 .section_parcours {
    background-color: white;
 
-   p {
-      color: white;
+   h2 {
+      font-size: 30px;
+      padding: 20px;
+   }
+}
+
+.ecole {
+   padding: 10px 0;
+
+   div {
+      width: 260px;
+      margin: 0 auto;
+   }
+
+   div:last-of-type {
+      border-left: 1px solid $dark_color;
+   }
+
+   span {
+      font-weight: bold;
+   }
+
+   span, p {
+      padding: 10px 0px 0px 10px;
+   }
+}
+
+.etudes {
+
+   div:nth-child(2) {
+
+      div:first-of-type {
+         width: 150px;
+      }
    }
 }

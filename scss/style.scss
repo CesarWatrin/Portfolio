@@ -18,7 +18,7 @@ body {
    flex-direction: column;
    color: white;
    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20px));
-   padding-bottom: 30px;
+   padding-bottom: 40px;
 }
 
 .text_content {
@@ -147,4 +147,71 @@ button {
       width: 80%;
       padding-left: 20px;
    }
+}
+
+.section_competence {
+   background-color: $dark_color;
+   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+
+   h2 {
+      font-weight: lighter;
+      color: white;
+      text-align: right;
+      padding: 20px;
+      padding-top: 20px + 20px;
+      font-size: 30px;
+   }
+
+   h3 {
+      color: white;
+      font-weight: lighter;
+      text-align: center;
+   }
+
+   h3:before, h3:after {
+      content:'';
+      display: inline-block;
+      vertical-align: middle;
+      width: 10%;
+      height: 1px;
+      background: white;
+   }
+
+   h3:before {
+      margin-right: .3rem
+   }
+
+   h3:after {
+      margin-left: .3rem
+   }
+}
+
+.competences {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.comp {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 90px;
+   margin: 20px;
+   filter: grayscale(100%);
+   transition: 0.5s;
+
+   img {
+      width: 50px;
+      margin: 0 auto;
+   }
+
+   span {
+      color: white;
+      margin: 0 auto;
+   }
+}
+
+.comp:hover {
+   filter: grayscale(0%);
 }

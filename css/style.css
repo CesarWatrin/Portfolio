@@ -485,7 +485,7 @@ body {
   flex-direction: column;
   color: white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20px));
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 /* line 24, ../César/Documents/Portofolio_V2/scss/style.scss */
@@ -626,6 +626,84 @@ button {
 .projet .projet-description {
   width: 80%;
   padding-left: 20px;
+}
+
+/* line 152, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence {
+  background-color: #222222;
+  clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+}
+
+/* line 156, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence h2 {
+  font-weight: lighter;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+/* line 165, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence h3 {
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* line 171, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence h3:before, .section_competence h3:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+  height: 1px;
+  background: white;
+}
+
+/* line 180, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence h3:before {
+  margin-right: .3rem;
+}
+
+/* line 184, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_competence h3:after {
+  margin-left: .3rem;
+}
+
+/* line 189, ../César/Documents/Portofolio_V2/scss/style.scss */
+.competences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 195, ../César/Documents/Portofolio_V2/scss/style.scss */
+.comp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  margin: 20px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+/* line 204, ../César/Documents/Portofolio_V2/scss/style.scss */
+.comp img {
+  width: 50px;
+  margin: 0 auto;
+}
+
+/* line 209, ../César/Documents/Portofolio_V2/scss/style.scss */
+.comp span {
+  color: white;
+  margin: 0 auto;
+}
+
+/* line 215, ../César/Documents/Portofolio_V2/scss/style.scss */
+.comp:hover {
+  filter: grayscale(0%);
 }
 
 /*# sourceMappingURL=style.css.map */

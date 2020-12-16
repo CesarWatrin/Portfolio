@@ -631,10 +631,11 @@ button {
 /* line 152, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence {
   background-color: #222222;
-  clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 calc(100% - 20px));
+  padding-bottom: 40px;
 }
 
-/* line 156, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 157, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h2 {
   font-weight: lighter;
   color: white;
@@ -644,14 +645,14 @@ button {
   font-size: 30px;
 }
 
-/* line 165, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 166, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3 {
   color: white;
   font-weight: lighter;
   text-align: center;
 }
 
-/* line 171, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 172, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:before, .section_competence h3:after {
   content: '';
   display: inline-block;
@@ -661,24 +662,24 @@ button {
   background: white;
 }
 
-/* line 180, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 181, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:before {
   margin-right: .3rem;
 }
 
-/* line 184, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 185, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:after {
   margin-left: .3rem;
 }
 
-/* line 189, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 190, ../César/Documents/Portofolio_V2/scss/style.scss */
 .competences {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 195, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 196, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp {
   display: flex;
   flex-direction: column;
@@ -689,21 +690,31 @@ button {
   transition: 0.5s;
 }
 
-/* line 204, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 205, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp img {
   width: 50px;
   margin: 0 auto;
 }
 
-/* line 209, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 210, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp span {
   color: white;
   margin: 0 auto;
 }
 
-/* line 215, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 216, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp:hover {
   filter: grayscale(0%);
+}
+
+/* line 220, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_parcours {
+  background-color: white;
+}
+
+/* line 223, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_parcours p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

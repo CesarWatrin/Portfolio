@@ -151,7 +151,8 @@ button {
 
 .section_competence {
    background-color: $dark_color;
-   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 calc(100% - 20px));
+   padding-bottom: 40px;
 
    h2 {
       font-weight: lighter;
@@ -214,4 +215,12 @@ button {
 
 .comp:hover {
    filter: grayscale(0%);
+}
+
+.section_parcours {
+   background-color: white;
+
+   p {
+      color: white;
+   }
 }

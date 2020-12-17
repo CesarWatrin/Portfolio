@@ -26,6 +26,11 @@ body {
    flex-direction: column;
    justify-content: center;
 
+   h1 {
+      font-size: 40px;
+      text-align: center;
+   }
+
    div:nth-child(1) {
       padding: 50px 20px 10px 20px;
       font-size: 30px;
@@ -242,7 +247,7 @@ button {
       font-weight: bold;
    }
 
-   span, p {
+   span, p, a {
       padding: 10px 0px 0px 10px;
    }
 }
@@ -254,5 +259,123 @@ button {
       div:first-of-type {
          width: 150px;
       }
+   }
+}
+
+.section_a_propos {
+   @extend .section_competence;
+}
+
+.resume {
+
+   p {
+      color: white;
+      padding: 20px 40px;
+      text-align: justify;
+   }
+}
+
+.interet {
+   @extend .competences;
+
+   .elem {
+      @extend .comp;
+   }
+}
+
+.diplomes {
+   @extend .competences;
+
+   .dip {
+      @extend .comp;
+      margin: 40px 0;
+
+      p {
+         color: white;
+         margin: 20px;
+         text-align: center;
+      }
+   }
+}
+
+.section_cv {
+   @extend .section_parcours;
+}
+
+.cv {
+   @extend .competences;
+   padding-bottom: 50px;
+
+   .download {
+      @extend .comp;
+      filter: grayscale(0%);
+
+      a {
+         width: 50px;
+         margin: 0 auto;
+      }
+
+      span {
+         color: $dark_color;
+         margin: 20px;
+         text-align: center;
+      }
+   }
+}
+
+.section_contact {
+   @extend .section_competence;
+   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+}
+
+.reseaux {
+   @extend .competences;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   p {
+      color: white;
+      margin: 20px;
+      text-align: center;
+   }
+
+   .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+   .res {
+      @extend .comp;
+
+      a {
+         text-align: center;
+      }
+   }
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0 auto;
+
+   input, textarea {
+      width: 250px;
+      padding: 5px;
+      margin: 10px 0;
+      background-color: white;
+      border: none;
+   }
+}
+
+.section_footer {
+   background-color: $dark_color;
+
+   p {
+      color: white;
+      text-align: center;
+      padding: 20px;
    }
 }

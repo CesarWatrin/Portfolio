@@ -11,7 +11,7 @@
 <body>
    <section class="section_header">
       <div>
-         <div class="nav">
+         <div class="menu">
             <div class="logo">
                <a href="#"><img src="svg/logo_cesar_1.svg" alt="logo-cesar"></a>
             </div>
@@ -22,12 +22,12 @@
       </div>
       <nav>
          <ul>
-            <li><a href="#réalisations">Mes réalisations</a></li>
-            <li><a href="#compétences">Mes compétences</a></li>
-            <li><a href="#parcours">Mon parcours</a></li>
-            <li><a href="#àpropos">À propos</a></li>
-            <li><a href="#cv">Mon CV</a></li>
-            <li><a href="#contact">Me contacter</a></li>
+            <li><a class="toScroll nav" href="#realisations">Mes réalisations</a></li>
+            <li><a class="toScroll nav" href="#competences">Mes compétences</a></li>
+            <li><a class="toScroll nav" href="#parcours">Mon parcours</a></li>
+            <li><a class="toScroll nav" href="#apropos">À propos</a></li>
+            <li><a class="toScroll nav" href="#cv">Mon CV</a></li>
+            <li><a class="toScroll nav" href="#contact">Me contacter</a></li>
          </ul>
       </nav>
       <div class="text_content">
@@ -46,11 +46,12 @@
             </div>
          </div>
          <div>
-            <button class="offset">À propos</button>
+            <a class="toScroll offset" href="#apropos">À propos</a>
+            <!-- <button class="offset">À propos</button> -->
          </div>
       </div>
    </section>
-   <section id="réalisations" class="section_realisation">
+   <section id="realisations" class="section_realisation">
       <h2>Mes réalisations</h2>
       <div class="mes_projets">
          <div class="projet">
@@ -118,7 +119,7 @@
          </div>
       </div>
    </section>
-   <section id="compétences" class="section_competence">
+   <section id="competences" class="section_competence">
       <h2>Mes compétences</h2>
       <h3>Langages</h3>
       <div class="competences">
@@ -232,7 +233,7 @@
          </div>
       </div>
    </section>
-   <section id="àpropos" class="section_a_propos">
+   <section id="apropos" class="section_a_propos">
       <h2>À propos</h2>
       <h3>Qui suis-je ?</h3>
       <div class="resume">
@@ -330,6 +331,8 @@
       <p>César Watrin © 2021 — Tous droits réservés</p>
    </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/nav.js">
+</script>
 </script>
 </html>

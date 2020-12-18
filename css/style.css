@@ -398,15 +398,17 @@ template {
   display: none !important;
 }
 
-/* line 3, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 4, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .burger {
   width: 40px;
   height: 40px;
   cursor: pointer;
   position: relative;
+  position: relative;
+  z-index: 2;
 }
 
-/* line 9, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 12, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .burger span {
   width: 100%;
   height: 4px;
@@ -418,7 +420,7 @@ template {
   transition: background-color 0.5s ease-in-out;
 }
 
-/* line 20, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 23, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .burger span::before, .burger span::after {
   content: '';
   position: absolute;
@@ -428,33 +430,33 @@ template {
   transition: transform 0.5s ease-in-out;
 }
 
-/* line 29, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 32, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .burger span::before {
   transform: translateY(-10px);
 }
 
-/* line 33, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 36, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .burger span::after {
   transform: translateY(10px);
 }
 
-/* line 40, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
-.active span {
+/* line 43, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+.burger.active span {
   background-color: transparent;
 }
 
-/* line 44, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
-.active span::before {
+/* line 47, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+.burger.active span::before {
   transform: translateY(0px) rotateZ(45deg);
 }
 
-/* line 48, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
-.active span::after {
+/* line 51, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+.burger.active span::after {
   transform: translateY(0px) rotateZ(-45deg);
 }
 
-/* line 53, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
-nav {
+/* line 56, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -463,9 +465,48 @@ nav {
   margin: 0 auto;
 }
 
-/* line 62, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 65, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 .logo {
   width: 50px;
+}
+
+/* line 69, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #222222;
+  transform: translateX(100%);
+  transition: 0.5s ease-in-out;
+}
+
+/* line 79, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+nav ul {
+  height: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 89, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+/* line 100, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+nav.active {
+  transform: translateX(0);
 }
 
 @font-face {

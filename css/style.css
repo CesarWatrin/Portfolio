@@ -477,12 +477,13 @@ nav {
   top: 0;
   right: 0;
   height: 100vh;
+  min-width: 50vw;
   background-color: #222222;
   transform: translateX(100%);
   transition: 0.5s ease-in-out;
 }
 
-/* line 79, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 80, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 nav ul {
   height: 100%;
   padding: 0;
@@ -493,7 +494,7 @@ nav ul {
   justify-content: center;
 }
 
-/* line 89, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 90, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 nav a {
   display: block;
   width: 100%;
@@ -504,9 +505,16 @@ nav a {
   padding: 1em;
 }
 
-/* line 100, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 101, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
 nav.active {
   transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  /* line 107, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+  nav {
+    max-height: 600px;
+  }
 }
 
 @font-face {
@@ -519,7 +527,13 @@ body {
   font-family: 'Gentium-Bold';
 }
 
-/* line 17, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 19, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section * {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 25, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_header {
   background-color: #222222;
   display: flex;
@@ -529,37 +543,43 @@ body {
   padding-bottom: 40px;
 }
 
-/* line 26, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 34, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* line 31, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 39, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content h1 {
   font-size: 40px;
   text-align: center;
 }
 
-/* line 36, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 44, ../César/Documents/Portofolio_V2/scss/style.scss */
+.text_content div {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* line 49, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(1) {
   padding: 50px 20px 10px 20px;
   font-size: 30px;
 }
 
-/* line 41, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 54, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(2) {
   padding: 20px;
   text-align: justify;
 }
 
-/* line 46, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 59, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) {
   padding: 20px;
 }
 
-/* line 49, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 62, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div {
   filter: grayscale(100%);
   transition-duration: 1s;
@@ -568,37 +588,37 @@ body {
   position: relative;
 }
 
-/* line 56, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 69, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 62, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 75, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div img {
   max-width: 100%;
   transition: all 0.8s;
 }
 
-/* line 67, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 80, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div img:hover {
   transform: scale(1.06);
 }
 
-/* line 72, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 85, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div:hover {
   filter: grayscale(0%);
   transition-duration: 1s;
 }
 
-/* line 78, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 91, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(4) {
   display: flex;
   justify-content: center;
 }
 
-/* line 127, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 140, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset {
   width: 190px;
   height: 50px;
@@ -617,13 +637,13 @@ body {
   transition: 1s;
 }
 
-/* line 145, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 158, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset:hover {
   color: #222222;
   border: 1px solid #222222;
 }
 
-/* line 150, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 163, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset::before {
   content: '';
   position: absolute;
@@ -637,31 +657,32 @@ body {
   transition: all 0.6s;
 }
 
-/* line 163, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 176, ../César/Documents/Portofolio_V2/scss/style.scss */
 .offset:hover::before {
   top: 0px;
   border-radius: 0;
 }
 
-/* line 168, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 181, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation {
   background-color: white;
+  padding-bottom: 40px;
 }
 
-/* line 171, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 185, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation h2 {
   font-size: 30px;
   padding: 20px;
 }
 
-/* line 176, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 190, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_realisation .mes_projets {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 183, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 197, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet {
   display: flex;
   flex-direction: row;
@@ -669,26 +690,26 @@ body {
   max-width: 500px;
 }
 
-/* line 189, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 203, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet .projet-image {
   width: 30%;
   margin: auto 0;
 }
 
-/* line 194, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 208, ../César/Documents/Portofolio_V2/scss/style.scss */
 .projet .projet-description {
   width: 80%;
   padding-left: 20px;
 }
 
-/* line 200, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 214, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence, .section_a_propos, .section_contact {
   background-color: #222222;
   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 calc(100% - 20px));
   padding-bottom: 40px;
 }
 
-/* line 205, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 219, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h2, .section_a_propos h2, .section_contact h2 {
   font-weight: lighter;
   color: white;
@@ -698,14 +719,14 @@ body {
   font-size: 30px;
 }
 
-/* line 214, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 228, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3, .section_a_propos h3, .section_contact h3 {
   color: white;
   font-weight: lighter;
   text-align: center;
 }
 
-/* line 220, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 234, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:before, .section_a_propos h3:before, .section_contact h3:before, .section_competence h3:after, .section_a_propos h3:after, .section_contact h3:after {
   content: '';
   display: inline-block;
@@ -715,24 +736,24 @@ body {
   background: white;
 }
 
-/* line 229, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 243, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:before, .section_a_propos h3:before, .section_contact h3:before {
   margin-right: .3rem;
 }
 
-/* line 233, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 247, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_competence h3:after, .section_a_propos h3:after, .section_contact h3:after {
   margin-left: .3rem;
 }
 
-/* line 238, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 252, ../César/Documents/Portofolio_V2/scss/style.scss */
 .competences, .interet, .diplomes, .cv, .reseaux {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 244, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 258, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp, .interet .elem, .diplomes .dip, .cv .download, .reseaux .res {
   display: flex;
   flex-direction: column;
@@ -743,139 +764,141 @@ body {
   transition: 0.5s;
 }
 
-/* line 253, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 267, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp img, .interet .elem img, .diplomes .dip img, .cv .download img, .reseaux .res img {
   width: 50px;
   margin: 0 auto;
 }
 
-/* line 258, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 272, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp span, .interet .elem span, .diplomes .dip span, .cv .download span, .reseaux .res span {
   color: white;
   margin: 0 auto;
 }
 
-/* line 264, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 278, ../César/Documents/Portofolio_V2/scss/style.scss */
 .comp:hover, .interet .elem:hover, .diplomes .dip:hover, .cv .download:hover, .reseaux .res:hover {
   filter: grayscale(0%);
 }
 
-/* line 268, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 282, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_parcours, .section_cv {
   background-color: white;
+  padding-bottom: 40px;
 }
 
-/* line 271, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 286, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_parcours h2, .section_cv h2 {
   font-size: 30px;
   padding: 20px;
 }
 
-/* line 277, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 292, ../César/Documents/Portofolio_V2/scss/style.scss */
 .ecole {
   padding: 10px 0;
 }
 
-/* line 280, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 295, ../César/Documents/Portofolio_V2/scss/style.scss */
 .ecole div {
   width: 260px;
   margin: 0 auto;
 }
 
-/* line 285, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 300, ../César/Documents/Portofolio_V2/scss/style.scss */
 .ecole div:last-of-type {
   border-left: 1px solid #222222;
 }
 
-/* line 289, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 304, ../César/Documents/Portofolio_V2/scss/style.scss */
 .ecole span {
   font-weight: bold;
 }
 
-/* line 293, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 308, ../César/Documents/Portofolio_V2/scss/style.scss */
 .ecole span, .ecole p, .ecole a {
   padding: 10px 0px 0px 10px;
 }
 
-/* line 302, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 317, ../César/Documents/Portofolio_V2/scss/style.scss */
 .etudes div:nth-child(2) div:first-of-type {
   width: 150px;
 }
 
-/* line 314, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 329, ../César/Documents/Portofolio_V2/scss/style.scss */
 .resume p {
   color: white;
   padding: 20px 40px;
   text-align: justify;
 }
 
-/* line 332, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 347, ../César/Documents/Portofolio_V2/scss/style.scss */
 .diplomes .dip {
   margin: 40px 0;
 }
 
-/* line 336, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 351, ../César/Documents/Portofolio_V2/scss/style.scss */
 .diplomes .dip p {
   color: white;
   margin: 20px;
   text-align: center;
 }
 
-/* line 348, ../César/Documents/Portofolio_V2/scss/style.scss */
-.cv {
-  padding-bottom: 50px;
+/* line 359, ../César/Documents/Portofolio_V2/scss/style.scss */
+.section_cv {
+  padding-bottom: 40px;
 }
 
-/* line 352, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 367, ../César/Documents/Portofolio_V2/scss/style.scss */
 .cv .download {
   filter: grayscale(0%);
 }
 
-/* line 356, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 371, ../César/Documents/Portofolio_V2/scss/style.scss */
 .cv .download a {
   width: 50px;
   margin: 0 auto;
 }
 
-/* line 361, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 376, ../César/Documents/Portofolio_V2/scss/style.scss */
 .cv .download span {
   color: #222222;
   margin: 20px;
   text-align: center;
 }
 
-/* line 369, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 384, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_contact {
   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+  padding-bottom: 40px;
 }
 
-/* line 374, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 390, ../César/Documents/Portofolio_V2/scss/style.scss */
 .reseaux {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* line 380, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 396, ../César/Documents/Portofolio_V2/scss/style.scss */
 .reseaux p {
   color: white;
   margin: 20px;
   text-align: center;
 }
 
-/* line 386, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 402, ../César/Documents/Portofolio_V2/scss/style.scss */
 .reseaux .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 395, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 411, ../César/Documents/Portofolio_V2/scss/style.scss */
 .reseaux .res a {
   text-align: center;
 }
 
-/* line 401, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 417, ../César/Documents/Portofolio_V2/scss/style.scss */
 .form {
   display: flex;
   flex-direction: column;
@@ -883,26 +906,65 @@ body {
   margin: 0 auto;
 }
 
-/* line 407, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 423, ../César/Documents/Portofolio_V2/scss/style.scss */
 .form input, .form textarea {
   width: 90%;
   padding: 5px;
   margin: 10px auto;
   background-color: white;
   border: none;
+  border: 1px solid white;
+  transition: 0.7s;
 }
 
-/* line 416, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 433, ../César/Documents/Portofolio_V2/scss/style.scss */
+.form input[type='submit']:hover {
+  background-color: #222222;
+  color: white;
+}
+
+/* line 439, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_footer {
   background-color: #222222;
   margin-top: 1px;
 }
 
-/* line 420, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 443, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_footer p {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 453, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content {
+    max-width: 992px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* line 459, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content div {
+    margin: auto 0;
+    padding: 0;
+  }
+  /* line 464, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content div:nth-child(1) {
+    order: 2;
+  }
+  /* line 468, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content div:nth-child(2) {
+    order: 3;
+  }
+  /* line 472, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content div:nth-child(3) {
+    order: 1;
+  }
+  /* line 476, ../César/Documents/Portofolio_V2/scss/style.scss */
+  .text_content div:nth-child(4) {
+    order: 4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

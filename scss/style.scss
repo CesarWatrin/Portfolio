@@ -14,6 +14,14 @@ body {
    font-family: 'Gentium-Bold';
 }
 
+.section {
+
+   * {
+      margin: 0 auto;
+      max-width: 1200px;
+   }
+}
+
 .section_header {
    background-color: $dark_color;
    display: flex;
@@ -31,6 +39,11 @@ body {
    h1 {
       font-size: 40px;
       text-align: center;
+   }
+
+   div {
+      margin: 0 auto;
+      max-width: 400px;
    }
 
    div:nth-child(1) {
@@ -167,6 +180,7 @@ body {
 
 .section_realisation {
    background-color: white;
+   padding-bottom: 40px;
 
    h2 {
       font-size: 30px;
@@ -267,6 +281,7 @@ body {
 
 .section_parcours {
    background-color: white;
+   padding-bottom: 40px;
 
    h2 {
       font-size: 30px;
@@ -343,11 +358,11 @@ body {
 
 .section_cv {
    @extend .section_parcours;
+   padding-bottom: 40px;
 }
 
 .cv {
    @extend .competences;
-   padding-bottom: 50px;
 
    .download {
       @extend .comp;
@@ -369,6 +384,7 @@ body {
 .section_contact {
    @extend .section_competence;
    clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
+   padding-bottom: 40px;
 }
 
 .reseaux {
@@ -410,6 +426,13 @@ body {
       margin: 10px auto;
       background-color: white;
       border: none;
+      border: 1px solid white;
+      transition: 0.7s;
+   }
+
+   input[type='submit']:hover {
+      background-color: $dark_color;
+      color: white;
    }
 }
 
@@ -421,5 +444,37 @@ body {
       color: white;
       text-align: center;
       padding: 20px;
+   }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) {
+
+   .text_content {
+      max-width: 992px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      div {
+         margin: auto 0;
+         padding: 0;
+      }
+
+      div:nth-child(1) {
+         order: 2;
+      }
+
+      div:nth-child(2) {
+         order: 3;
+      }
+
+      div:nth-child(3) {
+         order: 1;
+      }
+
+      div:nth-child(4) {
+         order: 4;
+      }
    }
 }

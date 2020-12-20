@@ -293,10 +293,30 @@ section {
 
 .etudes {
 
+   div {
+      div {
+         padding: 5px;
+      }
+   }
+
    div:nth-child(2) {
 
       div:first-of-type {
-         width: 150px;
+         width: 120px;
+      }
+   }
+
+   div:nth-child(3) {
+
+      div:first-of-type {
+         width: 130px;
+      }
+   }
+
+   div:nth-child(4) {
+
+      div:first-of-type {
+         width: 200px;
       }
    }
 }

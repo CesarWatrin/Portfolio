@@ -571,7 +571,7 @@ body {
 /* line 51, ../César/Documents/Portofolio_V2/scss/style.scss */
 .text_content h1 {
   font-size: 45px;
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(to left, #e66465, #9198e5);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

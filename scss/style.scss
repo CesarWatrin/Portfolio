@@ -12,7 +12,6 @@ $icone_color: 0%;
 
 body {
    font-family: 'Gentium-Bold';
-   overflow-x: hidden;
 }
 
 .progress_bar {
@@ -32,6 +31,10 @@ body {
       margin: 0 auto;
       max-width: 1200px;
    }
+}
+
+section {
+   overflow-x: hidden
 }
 
 .section_header {

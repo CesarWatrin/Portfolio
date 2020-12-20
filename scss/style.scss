@@ -14,6 +14,17 @@ body {
    font-family: 'Gentium-Bold';
 }
 
+.progress_bar {
+   height: 10px;
+   background: linear-gradient(to left,#e66465, #9198e5);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
 .section {
 
    * {
@@ -35,16 +46,19 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   text-align: center;
 
    h1 {
-      font-size: 40px;
-      text-align: center;
+      font-size: 45px;
+      background: linear-gradient(#e66465, #9198e5);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: 0.5s;
+   }
 
-      span {
-         padding: 0;
-         margin: 0;
-         display: inline-block;
-      }
+   h1:hover {
+      filter: blur(1px);
    }
 
    div {
@@ -99,49 +113,6 @@ body {
       justify-content: center;
    }
 }
-
-// .offset {
-//    box-shadow:
-//    0.2em 0.2em 0 0 var(--color),
-//    inset 0.2em 0.2em 0 0 var(--color);
-//
-//    &:hover,
-//    &:focus {
-//       box-shadow:
-//       0 0 0 0 var(--hover),
-//       inset 6em 3.5em 0 0 var(--hover);
-//    }
-// }
-//
-// $colors: (offset: white);
-//
-// @each $button, $color in $colors {
-//    .#{$button} {
-//       --color: #{$color};
-//       --hover: #{adjust-hue($color, 45deg)};
-//    }
-// }
-//
-// button {
-//    cursor: pointer;
-//    color: var(--color);
-//    transition: 0.5s;
-//
-//    &:hover,
-//    &:focus {
-//       border-color: var(--hover);
-//       color: $dark_color;
-//    }
-// }
-//
-// button {
-//    background: none;
-//    border: 2px solid;
-//    font-size: inherit;
-//    line-height: 1;
-//    margin: 0.5em;
-//    padding: 1em 3em;
-// }
 
 .offset {
    width: 190px;
@@ -268,7 +239,7 @@ body {
    height: 90px;
    margin: 20px;
    filter: grayscale($icone_color);
-   transition: 0.5s;
+   transition: 0.4s;
 
    img {
       width: 50px;
@@ -282,7 +253,7 @@ body {
 }
 
 .comp:hover {
-   filter: grayscale(0%);
+   filter: grayscale(100%);
 }
 
 .section_parcours {

@@ -58,11 +58,12 @@ section {
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      transition: 0.5s;
    }
 
    h1:hover {
-      filter: blur(1px);
+      background: linear-gradient(to right,#e66465, #9198e5);
+      background-clip: text;
+      -webkit-background-clip: text;
    }
 
    div {
@@ -243,7 +244,6 @@ section {
    height: 90px;
    margin: 20px;
    filter: grayscale($icone_color);
-   transition: 0.4s;
 
    img {
       width: 50px;

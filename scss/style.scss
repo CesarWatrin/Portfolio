@@ -216,7 +216,7 @@ section {
 .projet:hover {
 
    .projet-image {
-      filter: blur(1px);
+      filter: contrast(200%);
    }
 }
 
@@ -270,7 +270,6 @@ section {
    justify-content: space-between;
    height: 90px;
    margin: 20px;
-   filter: grayscale($icone_color);
 
    img {
       width: 50px;
@@ -284,7 +283,7 @@ section {
 }
 
 .comp:hover {
-   filter: grayscale(100%);
+   filter: contrast(200%);
 }
 
 .section_parcours {
@@ -318,6 +317,13 @@ section {
    }
 }
 
+.ecole:hover {
+
+   img {
+      filter: contrast(200%);
+   }
+}
+
 .etudes {
 
    div {
@@ -346,10 +352,6 @@ section {
          width: 200px;
       }
    }
-}
-
-.ecole:hover {
-   padding-left: 30px;
 }
 
 .section_a_propos {

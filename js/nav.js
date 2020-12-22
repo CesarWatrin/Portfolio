@@ -8,7 +8,7 @@ burger.addEventListener('click', () => {
 });
 
 for (var i = 0; i < a.length; i++) {
-   if (a[i].className === 'toScroll nav') {
+   if (a[i].className === 'toScroll nav hoverable') {
       a[i].addEventListener('click', () => {
          burger.classList.toggle('active');
          nav.classList.toggle('active');

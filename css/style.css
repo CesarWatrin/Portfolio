@@ -1010,9 +1010,23 @@ section {
 }
 
 /* line 473, ../César/Documents/Portofolio_V2/scss/style.scss */
+button {
+  font-size: 1.2rem;
+  color: #fff;
+  background: #ff4754;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.2rem;
+  transition: all 0.2s;
+}
+
+/* line 482, ../César/Documents/Portofolio_V2/scss/style.scss */
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 487, ../César/Documents/Portofolio_V2/scss/style.scss */
 #notification {
-  position: fixed;
-  bottom: -8rem;
   color: #ff4754;
   background: #000;
   padding: 1.2rem 2.4rem;
@@ -1021,12 +1035,7 @@ section {
   transition: all 0.4s;
 }
 
-/* line 484, ../César/Documents/Portofolio_V2/scss/style.scss */
-#notification.show {
-  bottom: 2rem;
-}
-
-/* line 488, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 496, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_footer {
   background-color: #222222;
   margin-top: 1px;
@@ -1034,60 +1043,60 @@ section {
   text-align: center;
 }
 
-/* line 494, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 502, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_footer h3 {
   padding-top: 30px;
   font-size: 18px;
   font-weight: lighter;
 }
 
-/* line 500, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 508, ../César/Documents/Portofolio_V2/scss/style.scss */
 .section_footer p {
   padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 508, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 516, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content {
     max-width: 992px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /* line 514, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 522, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content div {
     margin: auto 0;
     padding: 0;
   }
-  /* line 519, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 527, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(1) {
     order: 2;
   }
-  /* line 523, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 531, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(2) {
     order: 3;
   }
-  /* line 527, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 535, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(3) {
     order: 1;
   }
-  /* line 531, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 539, ../César/Documents/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(4) {
     order: 4;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 539, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 547, ../César/Documents/Portofolio_V2/scss/style.scss */
   * {
     cursor: none;
   }
-  /* line 543, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 551, ../César/Documents/Portofolio_V2/scss/style.scss */
   .cursor {
     display: block;
     pointer-events: none;
   }
-  /* line 547, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 555, ../César/Documents/Portofolio_V2/scss/style.scss */
   .cursor__ball {
     position: fixed;
     top: 0;
@@ -1095,18 +1104,18 @@ section {
     mix-blend-mode: difference;
     z-index: 1000;
   }
-  /* line 554, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 562, ../César/Documents/Portofolio_V2/scss/style.scss */
   .cursor__ball circle {
     fill: #f7f8fa;
   }
-  /* line 560, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 568, ../César/Documents/Portofolio_V2/scss/style.scss */
   .cursor__ball__small {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  /* line 567, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 575, ../César/Documents/Portofolio_V2/scss/style.scss */
   .title_pointer {
     position: relative;
     z-index: 2000;

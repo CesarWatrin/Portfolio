@@ -108,6 +108,9 @@ function onMouseHoverOut() {
 }
 
 const toast = document.querySelector('#notification');
+toast.style.display = 'none';
+
+
 
 $(".form").submit(function(e) {
    e.preventDefault(); //empêcher une action par défaut
@@ -121,9 +124,9 @@ $(".form").submit(function(e) {
       data : form_data
    }).done(function(response){
       console.log('send');
-      toast.classList.add("show");
+      toast.style.display = '';
       setTimeout(() => {
-         toast.classList.remove("show");
+         toast.style.display = 'none';
       }, 2000);
    });
 });

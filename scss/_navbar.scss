@@ -4,10 +4,10 @@ $dark_color: #222222;
 .burger {
    width: 40px;
    height: 40px;
-   cursor: pointer;
    position: relative;
    position: relative;
    z-index: 2;
+   cursor: pointer;
 
    span {
       width: 100%;
@@ -110,5 +110,12 @@ nav.active {
 
    nav {
       max-height: 600px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+
+   .burger {
+      cursor: none;
    }
 }

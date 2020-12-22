@@ -67,3 +67,42 @@ function handleScroll() {
 
    progressBar.style.right = 100 - percentage + '%';
 }
+
+const bigBall = document.querySelector('.cursor__ball__big');
+const smallBall = document.querySelector('.cursor__ball__small');
+const hoverables = document.querySelectorAll('.hoverable');
+const title_pointer = document.querySelector('.title_pointer');
+title_pointer.style.display = 'none';
+
+// Listeners
+document.body.addEventListener('mousemove', onMouseMove);
+for (let i = 0; i < hoverables.length; i++) {
+   hoverables[i].addEventListener('mouseenter', onMouseHover);
+   hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+}
+
+// Move the cursor
+function onMouseMove(e) {
+   TweenMax.to(bigBall, .4, {
+      x: e.pageX - 4,
+      y: e.pageY - 15 - window.pageYOffset
+   })
+   TweenMax.to(smallBall, .1, {
+      x: e.pageX - 5,
+      y: e.pageY - 7 - window.pageYOffset
+   })
+}
+
+// Hover an element
+function onMouseHover() {
+   TweenMax.to(bigBall, .3, {
+      scale: 4
+   })
+   title_pointer.style.display = '';
+}
+function onMouseHoverOut() {
+   TweenMax.to(bigBall, .3, {
+      scale: 1
+   })
+   title_pointer.style.display = 'none';
+}

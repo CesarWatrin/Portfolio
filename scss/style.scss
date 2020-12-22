@@ -14,6 +14,10 @@ body {
    font-family: 'Gentium-Bold';
 }
 
+.cursor {
+   display: none;
+}
+
 .progress_bar {
    height: 10px;
    background: linear-gradient(to left,#e66465, #9198e5);
@@ -50,7 +54,7 @@ body {
 }
 
 section {
-   overflow-x: hidden
+   overflow-x: hidden;
 }
 
 .section_header {
@@ -510,5 +514,43 @@ section {
       div:nth-child(4) {
          order: 4;
       }
+   }
+}
+
+@media screen and (min-width: 1200px) {
+
+   * {
+      cursor: none;
+   }
+
+   .cursor {
+      display: block;
+      pointer-events: none;
+
+      &__ball {
+         position: fixed;
+         top: 0;
+         left: 0;
+         mix-blend-mode: difference;
+         z-index: 1000;
+
+         circle {
+            fill: #f7f8fa;
+         }
+      }
+   }
+
+   .cursor__ball__small {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .title_pointer {
+      position: relative;
+      z-index: 2000;
+      color: white;
+      padding-top: 10px;
    }
 }

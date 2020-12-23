@@ -484,13 +484,22 @@ button:hover {
   opacity: 0.8;
 }
 
-#notification {
-  color: #ff4754;
+#notifSuccess {
+  color: #16C60C;
   background: #000;
   padding: 1.2rem 2.4rem;
   border-radius: 0.2rem;
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s;
+  transition: all 0.5s;
+}
+
+#notifError {
+   color: #F03A17;
+   background: #000;
+   padding: 1.2rem 2.4rem;
+   border-radius: 0.2rem;
+   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+   transition: all 0.5s;
 }
 
 .section_footer {

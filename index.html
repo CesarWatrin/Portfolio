@@ -325,15 +325,18 @@
             <span>cesar.watrin@hotmail.com</span>
          </div>
          <p>Vous pouvez également me contacter via le formulaire ci-dessous.</p>
-         <form class="form" action="#" method="post" data-aos="zoom-out" data-aos-delay="200">
+         <form class="form" action="sendemail.php" method="post" data-aos="zoom-out" data-aos-delay="200">
             <input class="hoverable" type="text" name="nom" placeholder="Nom*" required>
             <input class="hoverable" type="email" name="email" placeholder="Email*" required>
             <input class="hoverable" type="text" name="sujet" placeholder="Sujet*" required>
             <textarea class="hoverable" name="message" rows="8" cols="80" placeholder="Message*" required></textarea>
             <input class="hoverable" type="submit" value="Envoyer">
          </form>
-         <div id="notification">
-            ❌ Une erreur est survenue ❌
+         <div id="notifSuccess">
+            ✅ Votre message a bien été envoyé !
+         </div>
+         <div id="notifError">
+            ❌ Une erreur est survenue !
          </div>
       </div>
    </section>

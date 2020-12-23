@@ -1,17 +1,16 @@
-@charset "UTF-8";
-/* line 1, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 1, ../web/Portofolio_V2/scss/_reset.scss */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* line 7, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 7, ../web/Portofolio_V2/scss/_reset.scss */
 img {
   width: 100%;
 }
 
-/* line 11, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 11, ../web/Portofolio_V2/scss/_reset.scss */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -26,12 +25,12 @@ html {
   width: device-width;
 }
 
-/* line 25, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 25, ../web/Portofolio_V2/scss/_reset.scss */
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* line 29, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 29, ../web/Portofolio_V2/scss/_reset.scss */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -44,31 +43,31 @@ body {
   height: 100%;
 }
 
-/* line 41, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 41, ../web/Portofolio_V2/scss/_reset.scss */
 [tabindex="-1"]:focus {
   outline: none !important;
 }
 
-/* line 45, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 45, ../web/Portofolio_V2/scss/_reset.scss */
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-/* line 51, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 51, ../web/Portofolio_V2/scss/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-/* line 56, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 56, ../web/Portofolio_V2/scss/_reset.scss */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 61, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 61, ../web/Portofolio_V2/scss/_reset.scss */
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -78,14 +77,14 @@ abbr[data-original-title] {
   border-bottom: 0;
 }
 
-/* line 70, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 70, ../web/Portofolio_V2/scss/_reset.scss */
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
-/* line 76, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 76, ../web/Portofolio_V2/scss/_reset.scss */
 ol,
 ul,
 dl {
@@ -93,7 +92,7 @@ dl {
   margin-bottom: 1rem;
 }
 
-/* line 83, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 83, ../web/Portofolio_V2/scss/_reset.scss */
 ol ol,
 ul ul,
 ol ul,
@@ -101,39 +100,39 @@ ul ol {
   margin-bottom: 0;
 }
 
-/* line 90, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 90, ../web/Portofolio_V2/scss/_reset.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 94, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 94, ../web/Portofolio_V2/scss/_reset.scss */
 dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
 
-/* line 99, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 99, ../web/Portofolio_V2/scss/_reset.scss */
 blockquote {
   margin: 0 0 1rem;
 }
 
-/* line 103, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 103, ../web/Portofolio_V2/scss/_reset.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 107, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 107, ../web/Portofolio_V2/scss/_reset.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 112, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 112, ../web/Portofolio_V2/scss/_reset.scss */
 small {
   font-size: 80%;
 }
 
-/* line 116, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 116, ../web/Portofolio_V2/scss/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -142,17 +141,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 124, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 124, ../web/Portofolio_V2/scss/_reset.scss */
 sub {
   bottom: -.25em;
 }
 
-/* line 128, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 128, ../web/Portofolio_V2/scss/_reset.scss */
 sup {
   top: -.5em;
 }
 
-/* line 132, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 132, ../web/Portofolio_V2/scss/_reset.scss */
 a {
   color: #007bff;
   text-decoration: none;
@@ -160,30 +159,30 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-/* line 139, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 139, ../web/Portofolio_V2/scss/_reset.scss */
 a:hover {
   color: #0056b3;
   text-decoration: none;
 }
 
-/* line 144, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 144, ../web/Portofolio_V2/scss/_reset.scss */
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 149, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 149, ../web/Portofolio_V2/scss/_reset.scss */
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 154, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 154, ../web/Portofolio_V2/scss/_reset.scss */
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
-/* line 158, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 158, ../web/Portofolio_V2/scss/_reset.scss */
 pre,
 code,
 kbd,
@@ -192,7 +191,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 166, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 166, ../web/Portofolio_V2/scss/_reset.scss */
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -200,23 +199,23 @@ pre {
   -ms-overflow-style: scrollbar;
 }
 
-/* line 173, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 173, ../web/Portofolio_V2/scss/_reset.scss */
 figure {
   margin: 0 0 1rem;
 }
 
-/* line 177, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 177, ../web/Portofolio_V2/scss/_reset.scss */
 img {
   vertical-align: middle;
   border-style: none;
 }
 
-/* line 182, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 182, ../web/Portofolio_V2/scss/_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 186, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 186, ../web/Portofolio_V2/scss/_reset.scss */
 a,
 area,
 button,
@@ -230,12 +229,12 @@ textarea {
   touch-action: manipulation;
 }
 
-/* line 199, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 199, ../web/Portofolio_V2/scss/_reset.scss */
 table {
   border-collapse: collapse;
 }
 
-/* line 203, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 203, ../web/Portofolio_V2/scss/_reset.scss */
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -244,29 +243,29 @@ caption {
   caption-side: bottom;
 }
 
-/* line 211, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 211, ../web/Portofolio_V2/scss/_reset.scss */
 th {
   text-align: inherit;
 }
 
-/* line 215, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 215, ../web/Portofolio_V2/scss/_reset.scss */
 label {
   display: inline-block;
   margin-bottom: .5rem;
 }
 
-/* line 220, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 220, ../web/Portofolio_V2/scss/_reset.scss */
 button {
   border-radius: 0;
 }
 
-/* line 224, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 224, ../web/Portofolio_V2/scss/_reset.scss */
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/* line 229, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 229, ../web/Portofolio_V2/scss/_reset.scss */
 input,
 button,
 select,
@@ -278,19 +277,19 @@ textarea {
   line-height: inherit;
 }
 
-/* line 240, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 240, ../web/Portofolio_V2/scss/_reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 245, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 245, ../web/Portofolio_V2/scss/_reset.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 250, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 250, ../web/Portofolio_V2/scss/_reset.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -298,7 +297,7 @@ html [type="button"],
   -webkit-appearance: button;
 }
 
-/* line 257, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 257, ../web/Portofolio_V2/scss/_reset.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -307,14 +306,14 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
-/* line 265, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 265, ../web/Portofolio_V2/scss/_reset.scss */
 input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 271, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 271, ../web/Portofolio_V2/scss/_reset.scss */
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -322,13 +321,13 @@ input[type="month"] {
   -webkit-appearance: listbox;
 }
 
-/* line 278, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 278, ../web/Portofolio_V2/scss/_reset.scss */
 textarea {
   overflow: auto;
   resize: vertical;
 }
 
-/* line 283, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 283, ../web/Portofolio_V2/scss/_reset.scss */
 fieldset {
   min-width: 0;
   padding: 0;
@@ -336,7 +335,7 @@ fieldset {
   border: 0;
 }
 
-/* line 290, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 290, ../web/Portofolio_V2/scss/_reset.scss */
 legend {
   display: block;
   width: 100%;
@@ -349,56 +348,56 @@ legend {
   white-space: normal;
 }
 
-/* line 302, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 302, ../web/Portofolio_V2/scss/_reset.scss */
 progress {
   vertical-align: baseline;
 }
 
-/* line 306, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 306, ../web/Portofolio_V2/scss/_reset.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 311, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 311, ../web/Portofolio_V2/scss/_reset.scss */
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
 }
 
-/* line 316, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 316, ../web/Portofolio_V2/scss/_reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 321, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 321, ../web/Portofolio_V2/scss/_reset.scss */
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
-/* line 326, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 326, ../web/Portofolio_V2/scss/_reset.scss */
 output {
   display: inline-block;
 }
 
-/* line 330, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 330, ../web/Portofolio_V2/scss/_reset.scss */
 summary {
   display: list-item;
 }
 
-/* line 334, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 334, ../web/Portofolio_V2/scss/_reset.scss */
 template {
   display: none;
 }
 
-/* line 338, ../César/Documents/Portofolio_V2/scss/_reset.scss */
+/* line 338, ../web/Portofolio_V2/scss/_reset.scss */
 [hidden] {
   display: none !important;
 }
 
-/* line 4, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 4, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger {
   width: 40px;
   height: 40px;
@@ -408,7 +407,7 @@ template {
   cursor: pointer;
 }
 
-/* line 12, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 12, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger span {
   width: 100%;
   height: 4px;
@@ -420,7 +419,7 @@ template {
   transition: background-color 0.5s ease-in-out;
 }
 
-/* line 23, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 23, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger span::before, .burger span::after {
   content: '';
   position: absolute;
@@ -430,32 +429,32 @@ template {
   transition: transform 0.5s ease-in-out;
 }
 
-/* line 32, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 32, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger span::before {
   transform: translateY(-10px);
 }
 
-/* line 36, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 36, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger span::after {
   transform: translateY(10px);
 }
 
-/* line 43, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 43, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger.active span {
   background-color: transparent;
 }
 
-/* line 47, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 47, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger.active span::before {
   transform: translateY(0px) rotateZ(45deg);
 }
 
-/* line 51, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 51, ../web/Portofolio_V2/scss/_navbar.scss */
 .burger.active span::after {
   transform: translateY(0px) rotateZ(-45deg);
 }
 
-/* line 56, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 56, ../web/Portofolio_V2/scss/_navbar.scss */
 .menu {
   display: flex;
   flex-direction: row;
@@ -465,12 +464,12 @@ template {
   margin: 0 auto;
 }
 
-/* line 65, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 65, ../web/Portofolio_V2/scss/_navbar.scss */
 .logo {
   width: 50px;
 }
 
-/* line 69, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 69, ../web/Portofolio_V2/scss/_navbar.scss */
 nav {
   position: fixed;
   z-index: 1;
@@ -483,7 +482,7 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
-/* line 80, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 80, ../web/Portofolio_V2/scss/_navbar.scss */
 nav ul {
   height: 100%;
   padding: 0;
@@ -494,7 +493,7 @@ nav ul {
   justify-content: center;
 }
 
-/* line 90, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 90, ../web/Portofolio_V2/scss/_navbar.scss */
 nav a {
   display: block;
   width: 100%;
@@ -505,25 +504,25 @@ nav a {
   padding: 1em;
 }
 
-/* line 100, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 100, ../web/Portofolio_V2/scss/_navbar.scss */
 nav a:hover {
   color: #429DFF;
 }
 
-/* line 105, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+/* line 105, ../web/Portofolio_V2/scss/_navbar.scss */
 nav.active {
   transform: translateX(0);
 }
 
 @media screen and (min-width: 768px) {
-  /* line 111, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+  /* line 111, ../web/Portofolio_V2/scss/_navbar.scss */
   nav {
     max-height: 600px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 118, ../César/Documents/Portofolio_V2/scss/_navbar.scss */
+  /* line 118, ../web/Portofolio_V2/scss/_navbar.scss */
   .burger {
     cursor: none;
   }
@@ -534,17 +533,17 @@ nav.active {
   src: url("../fonts/Poppins-Regular.ttf");
 }
 
-/* line 13, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 13, ../web/Portofolio_V2/scss/style.scss */
 body {
   font-family: 'Gentium-Bold';
 }
 
-/* line 17, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 17, ../web/Portofolio_V2/scss/style.scss */
 .cursor {
   display: none;
 }
 
-/* line 21, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 21, ../web/Portofolio_V2/scss/style.scss */
 .progress_bar {
   height: 10px;
   background: linear-gradient(to left, #e66465, #9198e5);
@@ -556,7 +555,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 32, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 32, ../web/Portofolio_V2/scss/style.scss */
 .to_the_top {
   position: fixed;
   bottom: 20px;
@@ -564,7 +563,7 @@ body {
   z-index: 3;
 }
 
-/* line 38, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 38, ../web/Portofolio_V2/scss/style.scss */
 .to_the_top a {
   font-size: 50px;
   font-weight: bold;
@@ -574,18 +573,18 @@ body {
   color: transparent;
 }
 
-/* line 50, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 50, ../web/Portofolio_V2/scss/style.scss */
 .section * {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-/* line 56, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 56, ../web/Portofolio_V2/scss/style.scss */
 section {
   overflow-x: hidden;
 }
 
-/* line 60, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 60, ../web/Portofolio_V2/scss/style.scss */
 .section_header {
   background-color: #222222;
   display: flex;
@@ -595,7 +594,7 @@ section {
   padding-bottom: 40px;
 }
 
-/* line 69, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 69, ../web/Portofolio_V2/scss/style.scss */
 .text_content {
   display: flex;
   flex-direction: column;
@@ -603,7 +602,7 @@ section {
   text-align: center;
 }
 
-/* line 75, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 75, ../web/Portofolio_V2/scss/style.scss */
 .text_content h1 {
   font-size: 45px;
   background: linear-gradient(to left, #e66465, #9198e5);
@@ -612,37 +611,37 @@ section {
   color: transparent;
 }
 
-/* line 83, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 83, ../web/Portofolio_V2/scss/style.scss */
 .text_content h1:hover {
   background: linear-gradient(to right, #e66465, #9198e5);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-/* line 89, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 89, ../web/Portofolio_V2/scss/style.scss */
 .text_content div {
   margin: 0 auto;
   max-width: 400px;
 }
 
-/* line 94, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 94, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(1) {
   padding: 50px 20px 10px 20px;
   font-size: 30px;
 }
 
-/* line 99, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 99, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(2) {
   padding: 20px;
   text-align: justify;
 }
 
-/* line 104, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 104, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) {
   padding: 20px;
 }
 
-/* line 107, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 107, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div {
   filter: grayscale(100%);
   transition-duration: 1s;
@@ -651,37 +650,37 @@ section {
   position: relative;
 }
 
-/* line 114, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 114, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* line 120, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 120, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div img {
   max-width: 100%;
   transition: all 0.8s;
 }
 
-/* line 125, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 125, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div img:hover {
   transform: scale(1.06);
 }
 
-/* line 130, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 130, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(3) div:hover {
   filter: grayscale(0%);
   transition-duration: 1s;
 }
 
-/* line 136, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 136, ../web/Portofolio_V2/scss/style.scss */
 .text_content div:nth-child(4) {
   display: flex;
   justify-content: center;
 }
 
-/* line 142, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 142, ../web/Portofolio_V2/scss/style.scss */
 .offset {
   width: 190px;
   height: 50px;
@@ -700,13 +699,13 @@ section {
   transition: 1s;
 }
 
-/* line 160, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 160, ../web/Portofolio_V2/scss/style.scss */
 .offset:hover {
   color: #222222;
   border: 1px solid #222222;
 }
 
-/* line 165, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 165, ../web/Portofolio_V2/scss/style.scss */
 .offset::before {
   content: '';
   position: absolute;
@@ -720,32 +719,32 @@ section {
   transition: all 0.6s;
 }
 
-/* line 178, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 178, ../web/Portofolio_V2/scss/style.scss */
 .offset:hover::before {
   top: 0px;
   border-radius: 0;
 }
 
-/* line 183, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 183, ../web/Portofolio_V2/scss/style.scss */
 .section_realisation {
   background-color: white;
   padding-bottom: 40px;
 }
 
-/* line 187, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 187, ../web/Portofolio_V2/scss/style.scss */
 .section_realisation h2 {
   font-size: 30px;
   padding: 20px;
 }
 
-/* line 192, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 192, ../web/Portofolio_V2/scss/style.scss */
 .section_realisation .mes_projets {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* line 199, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 199, ../web/Portofolio_V2/scss/style.scss */
 .projet {
   display: flex;
   flex-direction: row;
@@ -753,31 +752,31 @@ section {
   max-width: 500px;
 }
 
-/* line 205, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 205, ../web/Portofolio_V2/scss/style.scss */
 .projet .projet-image {
   width: 30%;
   margin: auto 0;
 }
 
-/* line 210, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 210, ../web/Portofolio_V2/scss/style.scss */
 .projet .projet-description {
   width: 80%;
   padding-left: 20px;
 }
 
-/* line 218, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 218, ../web/Portofolio_V2/scss/style.scss */
 .projet:hover .projet-image {
   filter: contrast(200%);
 }
 
-/* line 223, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 223, ../web/Portofolio_V2/scss/style.scss */
 .section_competence, .section_a_propos, .section_contact {
   background-color: #222222;
   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 calc(100% - 20px));
   padding-bottom: 40px;
 }
 
-/* line 228, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 228, ../web/Portofolio_V2/scss/style.scss */
 .section_competence h2, .section_a_propos h2, .section_contact h2 {
   font-weight: lighter;
   color: white;
@@ -787,14 +786,14 @@ section {
   font-size: 30px;
 }
 
-/* line 237, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 237, ../web/Portofolio_V2/scss/style.scss */
 .section_competence h3, .section_a_propos h3, .section_contact h3 {
   color: white;
   font-weight: lighter;
   text-align: center;
 }
 
-/* line 243, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 243, ../web/Portofolio_V2/scss/style.scss */
 .section_competence h3:before, .section_a_propos h3:before, .section_contact h3:before, .section_competence h3:after, .section_a_propos h3:after, .section_contact h3:after {
   content: '';
   display: inline-block;
@@ -804,24 +803,24 @@ section {
   background: white;
 }
 
-/* line 252, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 252, ../web/Portofolio_V2/scss/style.scss */
 .section_competence h3:before, .section_a_propos h3:before, .section_contact h3:before {
   margin-right: .3rem;
 }
 
-/* line 256, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 256, ../web/Portofolio_V2/scss/style.scss */
 .section_competence h3:after, .section_a_propos h3:after, .section_contact h3:after {
   margin-left: .3rem;
 }
 
-/* line 261, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 261, ../web/Portofolio_V2/scss/style.scss */
 .competences, .interet, .diplomes, .cv, .reseaux {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 267, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 267, ../web/Portofolio_V2/scss/style.scss */
 .comp, .interet .elem, .diplomes .dip, .cv .download, .reseaux .res {
   display: flex;
   flex-direction: column;
@@ -830,161 +829,161 @@ section {
   margin: 20px;
 }
 
-/* line 274, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 274, ../web/Portofolio_V2/scss/style.scss */
 .comp img, .interet .elem img, .diplomes .dip img, .cv .download img, .reseaux .res img {
   width: 50px;
   margin: 0 auto;
 }
 
-/* line 279, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 279, ../web/Portofolio_V2/scss/style.scss */
 .comp span, .interet .elem span, .diplomes .dip span, .cv .download span, .reseaux .res span {
   color: white;
   margin: 0 auto;
 }
 
-/* line 285, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 285, ../web/Portofolio_V2/scss/style.scss */
 .comp:hover, .interet .elem:hover, .diplomes .dip:hover, .cv .download:hover, .reseaux .res:hover {
   filter: contrast(200%);
 }
 
-/* line 289, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 289, ../web/Portofolio_V2/scss/style.scss */
 .section_parcours, .section_cv {
   background-color: white;
   padding-bottom: 40px;
 }
 
-/* line 293, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 293, ../web/Portofolio_V2/scss/style.scss */
 .section_parcours h2, .section_cv h2 {
   font-size: 30px;
   padding: 20px;
 }
 
-/* line 299, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 299, ../web/Portofolio_V2/scss/style.scss */
 .ecole {
   padding: 10px 0;
 }
 
-/* line 302, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 302, ../web/Portofolio_V2/scss/style.scss */
 .ecole div {
   width: 260px;
   margin: 0 auto;
 }
 
-/* line 307, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 307, ../web/Portofolio_V2/scss/style.scss */
 .ecole div:last-of-type {
   border-left: 1px solid #222222;
 }
 
-/* line 311, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 311, ../web/Portofolio_V2/scss/style.scss */
 .ecole span {
   font-weight: bold;
 }
 
-/* line 315, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 315, ../web/Portofolio_V2/scss/style.scss */
 .ecole span, .ecole p, .ecole a {
   padding: 10px 0px 0px 10px;
 }
 
-/* line 322, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 322, ../web/Portofolio_V2/scss/style.scss */
 .ecole:hover img {
   filter: contrast(200%);
 }
 
-/* line 330, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 330, ../web/Portofolio_V2/scss/style.scss */
 .etudes div div {
   padding: 5px;
 }
 
-/* line 337, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 337, ../web/Portofolio_V2/scss/style.scss */
 .etudes div:nth-child(2) div:first-of-type {
   width: 120px;
 }
 
-/* line 344, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 344, ../web/Portofolio_V2/scss/style.scss */
 .etudes div:nth-child(3) div:first-of-type {
   width: 130px;
 }
 
-/* line 351, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 351, ../web/Portofolio_V2/scss/style.scss */
 .etudes div:nth-child(4) div:first-of-type {
   width: 200px;
 }
 
-/* line 363, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 363, ../web/Portofolio_V2/scss/style.scss */
 .resume p {
   color: white;
   padding: 20px 40px;
   text-align: justify;
 }
 
-/* line 381, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 381, ../web/Portofolio_V2/scss/style.scss */
 .diplomes .dip {
   margin: 40px 0;
 }
 
-/* line 385, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 385, ../web/Portofolio_V2/scss/style.scss */
 .diplomes .dip p {
   color: white;
   margin: 20px;
   text-align: center;
 }
 
-/* line 393, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 393, ../web/Portofolio_V2/scss/style.scss */
 .section_cv {
   padding-bottom: 40px;
 }
 
-/* line 401, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 401, ../web/Portofolio_V2/scss/style.scss */
 .cv .download {
   filter: grayscale(0%);
 }
 
-/* line 405, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 405, ../web/Portofolio_V2/scss/style.scss */
 .cv .download a {
   width: 50px;
   margin: 0 auto;
 }
 
-/* line 410, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 410, ../web/Portofolio_V2/scss/style.scss */
 .cv .download span {
   color: #222222;
   margin: 20px;
   text-align: center;
 }
 
-/* line 418, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 418, ../web/Portofolio_V2/scss/style.scss */
 .section_contact {
   clip-path: polygon(0 calc(0% + 20px), 100% 0, 100% 100%, 0 100%);
   padding-bottom: 40px;
 }
 
-/* line 424, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 424, ../web/Portofolio_V2/scss/style.scss */
 .reseaux {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* line 430, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 430, ../web/Portofolio_V2/scss/style.scss */
 .reseaux p {
   color: white;
   margin: 20px;
   text-align: center;
 }
 
-/* line 436, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 436, ../web/Portofolio_V2/scss/style.scss */
 .reseaux .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 445, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 445, ../web/Portofolio_V2/scss/style.scss */
 .reseaux .res a {
   text-align: center;
 }
 
-/* line 451, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 451, ../web/Portofolio_V2/scss/style.scss */
 .form {
   display: flex;
   flex-direction: column;
@@ -992,7 +991,7 @@ section {
   margin: 0 auto;
 }
 
-/* line 457, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 457, ../web/Portofolio_V2/scss/style.scss */
 .form input, .form textarea {
   width: 90%;
   padding: 5px;
@@ -1003,13 +1002,13 @@ section {
   transition: 0.7s;
 }
 
-/* line 467, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 467, ../web/Portofolio_V2/scss/style.scss */
 .form input[type='submit']:hover {
   background-color: #222222;
   color: white;
 }
 
-/* line 473, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 473, ../web/Portofolio_V2/scss/style.scss */
 button {
   font-size: 1.2rem;
   color: #fff;
@@ -1019,23 +1018,33 @@ button {
   transition: all 0.2s;
 }
 
-/* line 482, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 482, ../web/Portofolio_V2/scss/style.scss */
 button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-/* line 487, ../César/Documents/Portofolio_V2/scss/style.scss */
-#notification {
-  color: #ff4754;
+/* line 487, ../web/Portofolio_V2/scss/style.scss */
+#notifSuccess {
+  color: #16C60C;
   background: #000;
   padding: 1.2rem 2.4rem;
   border-radius: 0.2rem;
   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
-/* line 496, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 496, ../web/Portofolio_V2/scss/style.scss */
+#notifError {
+  color: #F03A17;
+  background: #000;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.2rem;
+  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+/* line 505, ../web/Portofolio_V2/scss/style.scss */
 .section_footer {
   background-color: #222222;
   margin-top: 1px;
@@ -1043,60 +1052,60 @@ button:hover {
   text-align: center;
 }
 
-/* line 502, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 511, ../web/Portofolio_V2/scss/style.scss */
 .section_footer h3 {
   padding-top: 30px;
   font-size: 18px;
   font-weight: lighter;
 }
 
-/* line 508, ../César/Documents/Portofolio_V2/scss/style.scss */
+/* line 517, ../web/Portofolio_V2/scss/style.scss */
 .section_footer p {
   padding-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 516, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 525, ../web/Portofolio_V2/scss/style.scss */
   .text_content {
     max-width: 992px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  /* line 522, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 531, ../web/Portofolio_V2/scss/style.scss */
   .text_content div {
     margin: auto 0;
     padding: 0;
   }
-  /* line 527, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 536, ../web/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(1) {
     order: 2;
   }
-  /* line 531, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 540, ../web/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(2) {
     order: 3;
   }
-  /* line 535, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 544, ../web/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(3) {
     order: 1;
   }
-  /* line 539, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 548, ../web/Portofolio_V2/scss/style.scss */
   .text_content div:nth-child(4) {
     order: 4;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 547, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 556, ../web/Portofolio_V2/scss/style.scss */
   * {
     cursor: none;
   }
-  /* line 551, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 560, ../web/Portofolio_V2/scss/style.scss */
   .cursor {
     display: block;
     pointer-events: none;
   }
-  /* line 555, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 564, ../web/Portofolio_V2/scss/style.scss */
   .cursor__ball {
     position: fixed;
     top: 0;
@@ -1104,18 +1113,18 @@ button:hover {
     mix-blend-mode: difference;
     z-index: 1000;
   }
-  /* line 562, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 571, ../web/Portofolio_V2/scss/style.scss */
   .cursor__ball circle {
     fill: #f7f8fa;
   }
-  /* line 568, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 577, ../web/Portofolio_V2/scss/style.scss */
   .cursor__ball__small {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  /* line 575, ../César/Documents/Portofolio_V2/scss/style.scss */
+  /* line 584, ../web/Portofolio_V2/scss/style.scss */
   .title_pointer {
     position: relative;
     z-index: 2000;

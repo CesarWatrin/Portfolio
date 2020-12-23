@@ -107,9 +107,10 @@ function onMouseHoverOut() {
    title_pointer.style.display = 'none';
 }
 
-const toast = document.querySelector('#notification');
-toast.style.display = 'none';
-
+const notifSuccess = document.querySelector('#notifSuccess');
+const notifError = document.querySelector('#notifError');
+notifSuccess.style.display = 'none';
+notifError.style.display = 'none';
 
 
 $(".form").submit(function(e) {
@@ -122,12 +123,19 @@ $(".form").submit(function(e) {
       url : form_url,
       type: form_method,
       data : form_data
-   }).done(function(response){
+   }).done(function(data) {
       setTimeout(() => {
-         toast.style.display = '';
+         notifSuccess.style.display = '';
       }, 1000);
       setTimeout(() => {
-         toast.style.display = 'none';
+         notifSuccess.style.display = 'none';
+      }, 10000);
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+      setTimeout(() => {
+         notifError.style.display = '';
+      }, 1000);
+      setTimeout(() => {
+         notifError.style.display = 'none';
       }, 10000);
    });
 });

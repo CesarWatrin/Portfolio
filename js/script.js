@@ -123,10 +123,11 @@ $(".form").submit(function(e) {
       type: form_method,
       data : form_data
    }).done(function(response){
-      console.log('send');
-      toast.style.display = '';
+      setTimeout(() => {
+         toast.style.display = '';
+      }, 1000);
       setTimeout(() => {
          toast.style.display = 'none';
-      }, 2000);
+      }, 10000);
    });
 });

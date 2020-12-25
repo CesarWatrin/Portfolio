@@ -563,7 +563,6 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 5;
   visibility: hidden;
   opacity: 0;
-  overflow: hidden;
   transition: .64s ease-in-out;
   color: #222222;
 }
@@ -584,9 +583,11 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #fff;
   transform: rotate(32deg);
   transition: .64s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-/* line 37, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 39, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__photo {
   width: 100%;
   padding: 10px;
@@ -594,13 +595,23 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-between;
 }
 
-/* line 43, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 45, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__photo div {
   width: 100px;
-  margin: auto 20px;
+  margin: auto;
 }
 
-/* line 49, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 50, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+.popup__photo div:first-of-type {
+  margin-left: 40px;
+}
+
+/* line 54, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+.popup__photo div:last-of-type {
+  margin-right: 40px;
+}
+
+/* line 59, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__text {
   display: flex;
   flex-direction: column;
@@ -608,36 +619,38 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
 }
 
-/* line 55, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 65, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__text * {
   margin: auto;
 }
 
-/* line 59, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 69, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__text h3 {
   font-size: 15px;
   padding: 15px;
   text-align: center;
 }
 
-/* line 65, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 75, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__text p {
   font-size: 15px;
+  padding: 15px;
+  text-align: justify;
 }
 
-/* line 70, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 82, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages {
   width: 100%;
 }
 
-/* line 73, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 85, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages h3 {
   font-weight: lighter;
   text-align: center;
   font-size: 15px;
 }
 
-/* line 79, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 91, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages h3:before, .popup__langages h3:after {
   content: '';
   display: inline-block;
@@ -647,24 +660,24 @@ body::-webkit-scrollbar-thumb:hover {
   background: #222222;
 }
 
-/* line 88, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 100, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages h3:before {
   margin-right: .3rem;
 }
 
-/* line 92, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 104, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages h3:after {
   margin-left: .3rem;
 }
 
-/* line 96, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 108, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages .competences, .popup__langages .interet, .popup__langages .diplomes, .popup__langages .cv, .popup__langages .reseaux {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* line 102, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 114, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages .comp, .popup__langages .interet .elem, .interet .popup__langages .elem, .popup__langages .diplomes .dip, .diplomes .popup__langages .dip, .popup__langages .cv .download, .cv .popup__langages .download, .popup__langages .reseaux .res, .reseaux .popup__langages .res {
   display: flex;
   flex-direction: column;
@@ -673,41 +686,40 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 5px 10px;
 }
 
-/* line 109, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 121, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages .comp img, .popup__langages .interet .elem img, .interet .popup__langages .elem img, .popup__langages .diplomes .dip img, .diplomes .popup__langages .dip img, .popup__langages .cv .download img, .cv .popup__langages .download img, .popup__langages .reseaux .res img, .reseaux .popup__langages .res img {
   width: 35px;
   margin: 0 auto;
 }
 
-/* line 114, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 126, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__langages .comp span, .popup__langages .interet .elem span, .interet .popup__langages .elem span, .popup__langages .diplomes .dip span, .diplomes .popup__langages .dip span, .popup__langages .cv .download span, .cv .popup__langages .download span, .popup__langages .reseaux .res span, .reseaux .popup__langages .res span {
   color: #222222;
   margin: 0 auto;
 }
 
-/* line 121, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 133, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup:target {
   visibility: visible;
   opacity: 1;
 }
 
-/* line 124, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 136, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup:target .popup-inner {
   bottom: 0;
   right: 0;
   transform: rotate(0);
 }
 
-/* line 131, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 143, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__close {
   position: absolute;
-  right: -1rem;
-  top: -1rem;
+  right: 0;
+  top: 0;
   width: 3rem;
   height: 3rem;
   font-size: 20px;
   font-weight: 300;
-  border-radius: 100%;
   background-color: #222222;
   z-index: 4;
   color: #fff;
@@ -717,7 +729,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: none;
 }
 
-/* line 149, ../César/Documents/Portofolio_V2/scss/_popup.scss */
+/* line 160, ../César/Documents/Portofolio_V2/scss/_popup.scss */
 .popup__close:hover {
   color: #4098F6;
 }

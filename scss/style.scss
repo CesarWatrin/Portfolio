@@ -39,7 +39,6 @@ body {
       font-size: 70px;
       font-weight: bold;
       background: linear-gradient(#e66465, #9198e5);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
    }
@@ -76,14 +75,12 @@ section {
    h1 {
       font-size: 45px;
       background: linear-gradient(to left,#e66465, #9198e5);
-      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
    }
 
    h1:hover {
       background: linear-gradient(to right,#e66465, #9198e5);
-      background-clip: text;
       -webkit-background-clip: text;
    }
 
@@ -202,6 +199,12 @@ section {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+   }
+
+   .p_reseaux {
+      font-size: 18px;
+      padding: 20px;
+      text-align: center;
    }
 }
 

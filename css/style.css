@@ -577,7 +577,6 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-between;
   align-items: center;
   max-width: 800px;
-  max-height: 600px;
   width: 90%;
   height: 90%;
   background-color: #fff;

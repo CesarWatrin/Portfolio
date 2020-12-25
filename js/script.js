@@ -140,13 +140,13 @@ $(".form").submit(function(e) {
    });
 });
 
-const fixedbody = document.querySelectorAll('.fixedbody');
-const popup__close = document.querySelectorAll('.popup__close');
-for (let i = 0; i < fixedbody.length; i++) {
-   fixedbody[i].addEventListener('click', () => {
-      document.body.style.position = 'fixed';
-   });
-   popup__close[i].addEventListener('click', () => {
-      document.body.style.position = '';
-   });
-}
+// const fixedbody = document.querySelectorAll('.fixedbody');
+// const popup__close = document.querySelectorAll('.popup__close');
+// for (let i = 0; i < fixedbody.length; i++) {
+//    fixedbody[i].addEventListener('click', () => {
+//       document.body.style.position = 'fixed';
+//    });
+//    popup__close[i].addEventListener('click', () => {
+//       document.body.style.position = '';
+//    });
+// }

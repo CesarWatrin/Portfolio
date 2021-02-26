@@ -32,8 +32,6 @@ $dark_color : #222222;
       background-color: #fff;
       transform: rotate(32deg);
       transition: .64s ease-in-out;
-      overflow-x: hidden;
-      overflow-y: auto;
    }
 
    &__photo {
@@ -148,7 +146,7 @@ $dark_color : #222222;
    }
 
    &__close {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
       width: 3rem;
@@ -162,6 +160,11 @@ $dark_color : #222222;
       text-align: center;
       cursor: pointer;
       text-decoration: none;
+   }
+
+   &__scroll {
+      overflow-x: hidden;
+      overflow-y: auto;
    }
 
    &__close:hover {

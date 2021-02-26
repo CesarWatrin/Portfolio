@@ -145,6 +145,51 @@ section {
    }
 }
 
+.annonces {
+   text-align: center;
+   padding: 20px;
+   border: 1px solid;
+   border-image-source: linear-gradient(#e66465, #9198e5);
+   border-image-slice: 1;
+   margin: 0 auto;
+   max-width: 1200px;
+
+   h3 {
+      font-weight: normal;
+      margin-bottom: 10px;
+   }
+
+   h3:before, h3:after {
+      content:'';
+      display: inline-block;
+      vertical-align: middle;
+      width: 5%;
+      height: 1px;
+      background: white;
+   }
+
+   h3:before {
+      margin-right: .3rem
+   }
+
+   h3:after {
+      margin-left: .3rem
+   }
+
+   strong, a {
+      color: #e66465;
+   }
+
+   a {
+      text-decoration: underline;
+   }
+
+   .img-rythme {
+      max-width: 600px;
+      margin: 0 auto;
+   }
+}
+
 .offset {
    width: 190px;
    height: 50px;
@@ -344,10 +389,17 @@ section {
       }
    }
 
+   div:nth-child(1) {
+
+      div:first-of-type {
+         width: 220px;
+      }
+   }
+
    div:nth-child(2) {
 
       div:first-of-type {
-         width: 120px;
+         width: 250px;
       }
    }
 
@@ -361,7 +413,14 @@ section {
    div:nth-child(4) {
 
       div:first-of-type {
-         width: 200px;
+         width: 150px;
+      }
+   }
+
+   div:nth-child(5) {
+
+      div:first-of-type {
+         width: 220px;
       }
    }
 }
@@ -483,26 +542,26 @@ section {
 }
 
 button {
-  font-size: 1.2rem;
-  color: #fff;
-  background: #ff4754;
-  padding: 1.2rem 2.4rem;
-  border-radius: 0.2rem;
-  transition: all 0.2s;
+   font-size: 1.2rem;
+   color: #fff;
+   background: #ff4754;
+   padding: 1.2rem 2.4rem;
+   border-radius: 0.2rem;
+   transition: all 0.2s;
 }
 
 button:hover {
-  cursor: pointer;
-  opacity: 0.8;
+   cursor: pointer;
+   opacity: 0.8;
 }
 
 #notifSuccess {
-  color: #16C60C;
-  background: #000;
-  padding: 1.2rem 2.4rem;
-  border-radius: 0.2rem;
-  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s;
+   color: #16C60C;
+   background: #000;
+   padding: 1.2rem 2.4rem;
+   border-radius: 0.2rem;
+   box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+   transition: all 0.5s;
 }
 
 #notifError {

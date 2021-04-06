@@ -4,19 +4,19 @@
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLQGR6LF7L"></script>
    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YLQGR6LF7L');
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+   gtag('config', 'G-YLQGR6LF7L');
    </script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio de César Watrin, étudiant en développement web à Gap et passionné par la programmation front-end et back-end. À la recherche d'une entreprise située à Lyon afin de réaliser un Master en alternance avec l'école Ynov à partir de septembre 2021.">
-<meta name="google-site-verification" content="8qCl91k_udCPy0ZxKMVCp5yZH_SNM9WDurLb3N-OMcQ"/>
-<link rel="icon" type="image/svg" href="svg/logo_cesar_1.svg">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<title>César Watrin</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Portfolio de César Watrin, étudiant en développement web à Gap et passionné par la programmation front-end et back-end. À la recherche d'une entreprise située à Lyon afin de réaliser un Master en alternance avec l'école Ynov à partir de septembre 2021.">
+   <meta name="google-site-verification" content="8qCl91k_udCPy0ZxKMVCp5yZH_SNM9WDurLb3N-OMcQ"/>
+   <link rel="icon" type="image/svg" href="svg/logo_cesar_1.svg">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>César Watrin</title>
 </head>
 <body>
    <div class="progress_bar"></div>
@@ -134,8 +134,27 @@
                </div>
             </div>
          </div>
-         <p class="p_reseaux">Retrouver tous mes projets sur mon <a class="hoverable" href="https://www.linkedin.com/in/césar-watrin/" target="_blank" rel="noreferrer noopener">LinkedIn</a> et sur mon <a class="hoverable" href="https://github.com/CesarWatrin" target="_blank" rel="noreferrer noopener">GitHub</a>.</p>
+         <div class="projet" data-aos="zoom-out" data-aos-delay="300">
+            <div class="projet-image">
+               <img src="img/macyo.png" alt="logo-macyo">
+            </div>
+            <div class="projet-description">
+               <div>
+                  <h3>Projet MAC-YO Corp.</h3>
+               </div>
+               <div>
+                  <p>
+                     Un site web dédié au Click and Drive
+                     pour les commerçants en France.
+                  </p>
+               </div>
+               <div>
+                  <a class="hoverable" href="#popup_projet3">En savoir plus</a>
+               </div>
+            </div>
+         </div>
       </div>
+      <p class="p_reseaux">Retrouver tous mes projets sur mon <a class="hoverable" href="https://www.linkedin.com/in/césar-watrin/" target="_blank" rel="noreferrer noopener">LinkedIn</a> et sur mon <a class="hoverable" href="https://github.com/CesarWatrin" target="_blank" rel="noreferrer noopener">GitHub</a>.</p>
    </section>
    <section id="competences" class="section_competence section">
       <h2>Mes compétences</h2>
@@ -241,7 +260,7 @@
             <div>
                <span>Avril à juillet 2021</span>
                <p>
-                  Stage fin de Licence en tant que développeur web chez meilleur-artisan.com à Gap.
+                  Stage fin de Licence en tant que développeur web PHP/Laravel chez meilleur-artisan.com à Gap.
                </p>
                <a class="hoverable" href="https://www.meilleur-artisan.com/" target="_blank" rel="noreferrer noopener">En savoir plus</a>
             </div>
@@ -505,6 +524,84 @@
                   <div class="comp">
                      <img src="svg/python.svg" alt="python">
                      <span>Python</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="popup__close hoverable" href="#realisations">X</a>
+      </div>
+   </div>
+   <div class="popup" id="popup_projet3">
+      <div class="popup-inner">
+         <div class="popup__scroll">
+            <div class="popup__photo">
+               <div>
+                  <img src="img/macyo.png" alt="macyo">
+               </div>
+            </div>
+            <div class="popup__text">
+               <h3>
+                  Création d'un site de Click and Drive pour permettre aux
+                  commerçants de mettre en ligne leurs produits.
+               </h3>
+               <p>
+                  Dans le cadre de la Licence Professionnelle MIW à Gap, nous avons réalisé pendant 12 semaines par groupe de 4 étudiants,
+                  un site web dédié au Click and Drive pour les petits/grands commerçants en France.
+                  <br>
+                  <br>
+                  Le but étant de permettre à n'importe quel gérant de magasin de se créer un compte et de pouvoir y renseigner les
+                  informations relatives à son ou ses commerces. Il peut par la suite gérer ses commerces ainsi que gérer les avis
+                  déposés par les consommateurs.
+                  <br>
+                  <br>
+                  Les utilisateurs quant à eux peuvent accéder à la carte avec l'ensemble des commerces, leurs informations et le
+                  catalogue s'ils en ont un. Ils peuvent également ajouter des commerces en favoris pour y accéder plus facilement
+                  et avoir la possibilité de créer un compte et de pouvoir laisser des avis aux commerces.
+                  <br>
+                  <br>
+                  Un système de back-office est également implémenté afin de permettre aux modérateurs du site (nous) de pouvoir
+                  gérer (accepter/refuser/mettre en attente) les utilisateurs, les avis et les commerces.
+                  <br>
+                  <br>
+                  Pour ce projet nous avons utilisé le framework PHP Laravel organisé avec l'architecture Modèle-Vue-Contrôleur (MVC).
+                  <br>
+                  <br>
+                  L'ensemble des fichiers de style sont écrits en Sass puis compilés avec webpack.
+                  <br>
+                  <br>
+                  La partie back-office est quant à elle réalisée grâce à l'outil Backpack for Laravel.
+                  <br>
+                  <br>
+                  Les maquettes ont été réalisé avec Adobe XD.
+               </p>
+            </div>
+            <div class="popup__capture">
+               <div>
+                  Lien : <a class="hoverable" href="https://macyo.yohansalamone.com/" target="_blank">MACYO Corp.</a>
+               </div>
+            </div>
+            <div class="popup__langages">
+               <h3>Langages et Framework utilisés</h3>
+               <div class="competences">
+                  <div class="comp">
+                     <img src="svg/laravel.svg" alt="laravel">
+                     <span>Laravel</span>
+                  </div>
+                  <div class="comp">
+                     <img src="svg/html.svg" alt="html-5">
+                     <span>HTML 5</span>
+                  </div>
+                  <div class="comp">
+                     <img src="svg/sass.svg" alt="sass">
+                     <span>SCSS</span>
+                  </div>
+                  <div class="comp">
+                     <img src="svg/js.svg" alt="javascript">
+                     <span>Javascript</span>
+                  </div>
+                  <div class="comp">
+                     <img src="svg/php.svg" alt="php">
+                     <span>PHP</span>
                   </div>
                </div>
             </div>

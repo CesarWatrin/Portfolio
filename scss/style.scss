@@ -400,32 +400,46 @@ section {
    div:nth-child(1) {
 
       div:first-of-type {
-         width: 220px;
+         width: 180px;
       }
    }
 
    div:nth-child(2) {
 
       div:first-of-type {
-         width: 250px;
+         width: 140px;
       }
    }
 
    div:nth-child(3) {
 
       div:first-of-type {
-         width: 130px;
+         width: 220px;
       }
    }
 
    div:nth-child(4) {
 
       div:first-of-type {
-         width: 150px;
+         width: 250px;
       }
    }
 
    div:nth-child(5) {
+
+      div:first-of-type {
+         width: 130px;
+      }
+   }
+
+   div:nth-child(6) {
+
+      div:first-of-type {
+         width: 150px;
+      }
+   }
+
+   div:nth-child(7) {
 
       div:first-of-type {
          width: 220px;
